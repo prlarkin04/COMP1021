@@ -1,0 +1,27 @@
+/* stylesheet.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #c50a2c;
+}
+
+.banner {
+        background-color: #0C4C00;
+        color: white;
+        padding: 20px;
+        text-align: center;
+}
+
+.navigate {
+        text-align: right;
+        color: #c50a2c;
+        text-decoration: none !important; /* Remove underline from visited links */
+}
+
+a:visited {
+    color: #ae25ba; /* Change the color of visited links */
+    text-decoration: none !important; /* Remove underline from visited links */
+}
