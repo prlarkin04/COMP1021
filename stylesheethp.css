@@ -2,10 +2,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #c50a2c;
+    filter: brightness(80%)
 }
 h1 {
-    color: #c50a2c;
+    color: blue;
 }
 
 .banner {
@@ -22,6 +23,6 @@ h1 {
 }
 
 a:visited {
-    color: #ae25ba; /* Change the color of visited links */
+    color: inherit; /* Change the color of visited links */
     text-decoration: none !important; /* Remove underline from visited links */
 }
