@@ -44,10 +44,28 @@ h1 a {
         text-align: center;
 }
 
-/* Recipe Dropdown Button */
+/* Dropdown Button */
 .recipedropbtn {
     background-color: #0C4C00;
-    color: #c50a2c;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: 'FuturaPTD', sans-serif;
+  }
+
+.articledropbtn {
+    background-color: #0C4C00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: 'FuturaPTD', sans-serif;
+  }
+
+.mythdropbtn {
+    background-color: #0C4C00;
+    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -55,18 +73,31 @@ h1 a {
   }
   
   /* The container <div> - needed to position the dropdown content */
-  .recipedropdown {
+.recipedropdown {
     position: absolute; /* Change position to absolute, relative, fixed, etc. */
     top: 170px; /* Adjust top position as needed */
-    right: 855px;
+    right: 630px;
+    display: inline-block;
+  }
+
+.articledropdown {
+    position: absolute; /* Change position to absolute, relative, fixed, etc. */
+    top: 170px; /* Adjust top position as needed */
+    right: 730px;
+    display: inline-block;
+  }
+
+.mythdropdown {
+    position: absolute; /* Change position to absolute, relative, fixed, etc. */
+    top: 170px; /* Adjust top position as needed */
+    right: 830px;
     display: inline-block;
   }
   
   /* Dropdown Content (Hidden by Default) */
-  .recipedropdown-content {
+.recipedropdown-content {
     display: none;
     position: absolute;
-    text-align: left;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -74,7 +105,7 @@ h1 a {
   }
   
   /* Links inside the dropdown */
-  .recipedropdown-content a {
+.recipedropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -85,105 +116,28 @@ h1 a {
   .recipedropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
-  .recipedropdown:hover .recipedropdown-content {display: block;}
+  .recipedropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .recipedropdown:hover .recipedropbtn {background-color: #3e8e41;}
+  .recipedropdown:hover .dropbtn {background-color: #3e8e41;}
 
-/* Article Dropdown Button */
-  .articledropbtn {
-    background-color: #0C4C00;
-    color: #c50a2c;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    font-family: 'FuturaPTD', sans-serif;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .articledropdown {
-    position: absolute; /* Change position to absolute, relative, fixed, etc. */
-    top: 170px; /* Adjust top position as needed */
-    right: 770px;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .articledropdown-content {
-    display: none;
-    position: absolute;
-    text-align: left;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .articledropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
   /* Change color of dropdown links on hover */
   .articledropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
-  .articledropdown:hover .articledropdown-content {display: block;}
+  .articledropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .articledropdown:hover .articledropbtn {background-color: #3e8e41;}
-
-
-
-/* Myth Dropdown Button */
-.mythdropbtn {
-    background-color: #0C4C00;
-    color:#c50a2c;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    font-family: 'FuturaPTD', sans-serif;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .mythdropdown {
-    position: absolute; /* Change position to absolute, relative, fixed, etc. */
-    top: 170px; /* Adjust top position as needed */
-    right: 655px;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .mythdropdown-content {
-    display: none;
-    position: absolute;
-    text-align: left;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(5, 4, 4, 0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .mythdropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
+  .articledropdown:hover .dropbtn {background-color: #3e8e41;}
+   
   /* Change color of dropdown links on hover */
   .mythdropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
-  .mythdropdown:hover .mythdropdown-content {display: block;}
+  .mythdropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .mythdropdown:hover .mythdropbtn {background-color: #3e8e41;}
-
+  .mythdropdown:hover .dropbtn {background-color: #3e8e41;}
 
 nav {
     text-align: right; /* Align the text within the nav container to the right */
@@ -246,10 +200,6 @@ h4 {
     text-align: center;
 }
 
-.mythbio{
-    text-align: center;
-}
-
 .chickencurry {
     position: relative;
     left: 50%;
@@ -276,12 +226,4 @@ h4 {
 
 ul li{
     margin-bottom: 10px;
-}
-
-.article1title{
-    text-align: center;
-}
-
-.myth1title{
-    text-align: center;
 }
