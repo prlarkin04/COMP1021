@@ -12,36 +12,53 @@
 <body>
 
     <header class="banner">
+        <button id="speakButton">Read Aloud</button>
         <h1><a href="homepage.html" class="logolink">Campus Kitchen</a></h1>
         <p>The only website you need as a student for quick, easy recipes, top eats and everything else food</p>
-        <nav>
-            <div class="recipedropdown">
-                <button class="recipedropbtn">Recipes</button>
-                <div class="recipedropdown-content">
-                    <a href="recipe.html">Indian Chicken Curry</a>
-                </div>
-            </div>
-
-            <div class="articledropdown">
-                <button class="articledropbtn">Articles</button>
-                <div class="articledropdown-content">
-                    <a href="article1.html">Best Pizza in Leeds</a>
-
-                </div>
-            </div>
-        
-            <div class="mythdropdown">
-                <button class="mythdropbtn">Mythbusting</button>
-                <div class="mythdropdown-content">
-                    <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
-
-                </div>
-            </div>
-
-        
-            <a href="contactus.html" class="navigate">Contact Us</a>
-        </nav>        
     </header>
+    <header class="banner2">
+        <br>
+        <hr class = "hr">
+        <br>
+        <nav>
+            <div class="dropdown">
+                <div class="recipedropdown">
+                    <button class="recipedropbtn">Recipes</button>
+                    <div class="recipedropdown-content">
+                        <a onclick="clickCounterLocal()" href="recipe.html" >Indian Chicken Curry</a>
+                    </div>
+                </div>
+
+                <div class="articledropdown">
+                    <button class="articledropbtn">Articles</button>
+                    <div class="articledropdown-content">
+                        <a href="article1.html">Best Pizza in Leeds</a>
+                        <!-- Add more article links here -->
+                    </div>
+                </div>
+            
+                <div class="mythdropdown">
+                    <button class="mythdropbtn">Mythbusting</button>
+                    <div class="mythdropdown-content">
+                        <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
+                        <!-- Add more myth links here -->
+                    </div>
+                </div>
+            </div>
+
+            <a id= "contactu" href="contactus.html" class="navigate">Contact Us</a>
+        </nav> 
+        
+    </header>
+    
+      
+
+    <button id="toggleBanner" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
 
 
 
@@ -130,6 +147,11 @@
     <h3 class = "reference">Article adapted from: https://leeds-list.com/food-and-drink/where-to-get-the-best-pizza-in-leeds/</h3>
     </a>
 
+    <footer>
+        <div id="location" class="location"></div>
+        <br>
+        <br>
+    </footer>
 
 </body>
 </html>

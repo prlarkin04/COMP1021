@@ -13,36 +13,57 @@
 <body>
 
     <header class="banner">
+        <button id="speakButton">Read Aloud</button>
         <h1><a href="homepage.html" class="logolink">Campus Kitchen</a></h1>
         <p>The only website you need as a student for quick, easy recipes, top eats and everything else food</p>
-        <nav>
-            <div class="recipedropdown">
-                <button class="recipedropbtn">Recipes</button>
-                <div class="recipedropdown-content">
-                    <a href="recipe.html">Indian Chicken Curry</a>
-                </div>
-            </div>
-
-            <div class="articledropdown">
-                <button class="articledropbtn">Articles</button>
-                <div class="articledropdown-content">
-                    <a href="article1.html">Best Pizza in Leeds</a>
-                    <!-- Add more article links here -->
-                </div>
-            </div>
-        
-            <div class="mythdropdown">
-                <button class="mythdropbtn">Mythbusting</button>
-                <div class="mythdropdown-content">
-                    <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
-                    <!-- Add more myth links here -->
-                </div>
-            </div>
-
-        
-            <a href="contactus.html" class="navigate">Contact Us</a>
-        </nav>        
     </header>
+    <header class="banner2">
+        <br>
+        <hr class = "hr">
+        <br>
+        <nav>
+            <div class="dropdown">
+                <div class="recipedropdown">
+                    <button class="recipedropbtn">Recipes</button>
+                    <div class="recipedropdown-content">
+                        <a onclick="clickCounterLocal()" href="recipe.html" >Indian Chicken Curry</a>
+                    </div>
+                </div>
+
+                <div class="articledropdown">
+                    <button class="articledropbtn">Articles</button>
+                    <div class="articledropdown-content">
+                        <a href="article1.html">Best Pizza in Leeds</a>
+                        <!-- Add more article links here -->
+                    </div>
+                </div>
+            
+                <div class="mythdropdown">
+                    <button class="mythdropbtn">Mythbusting</button>
+                    <div class="mythdropdown-content">
+                        <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
+                        <!-- Add more myth links here -->
+                    </div>
+                </div>
+            </div>
+
+            <a id= "contactu" href="contactus.html" class="navigate">Contact Us</a>
+        </nav> 
+        
+    </header>
+    
+      
+
+    <button id="toggleBanner" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <div id="resultlocal">
+    </div>
+
+
 
     <h1 class="recipetitle">Recipe of The Day</h1>
     <h3 class="recipename">Indian Chicken Curry</h3>
@@ -53,17 +74,19 @@
     <br>
     <h3>Ingredients: </h3>
     <ul class="ingredients">
-        <li>2 tbsp sunflower oil</li>
-        <li>1 onion, thinly sliced</li>
-        <li>2 garlic cloves, crushed</li>
-        <li>thumb-sized piece of ginger, grated</li>
-        <li>6 chicken thighs, boneless and skinless</li>
-        <li>3 tbsp medium spice paste (tikka works well)</li>
-        <li>400g can chopped tomatoes</li>
-        <li>100g Greek yogurt</li>
-        <li>1 small bunch of coriander, leaves chopped</li>
-        <li>50g ground almonds</li>
-        <li>naan breads or cooked basmati rice, to serve</li>
+    <ul>
+        <li>2 tbsp sunflower oil <input type="checkbox"></li>
+        <li>1 onion, thinly sliced <input type="checkbox"></li>
+        <li>2 garlic cloves, crushed <input type="checkbox"></li>
+        <li>thumb-sized piece of ginger, grated <input type="checkbox"></li>
+        <li>6 chicken thighs, boneless and skinless <input type="checkbox"></li>
+        <li>3 tbsp medium spice paste (tikka works well) <input type="checkbox"></li>
+        <li>400g can chopped tomatoes <input type="checkbox"></li>
+        <li>100g Greek yogurt <input type="checkbox"></li>
+        <li>1 small bunch of coriander, leaves chopped <input type="checkbox"></li>
+        <li>50g ground almonds <input type="checkbox"></li>
+        <li>naan breads or cooked basmati rice, to serve <input type="checkbox"></li>
+    </ul>
     </ul>
     <br>
     <hr class="hr">
@@ -86,4 +109,10 @@
     <a href="https://www.bbcgoodfood.com/recipes/easy-chicken-curry" class="reference">
         <h3 class = "reference">Article adapted from: https://www.bbcgoodfood.com/recipes/easy-chicken-curry</h3>
     </a>
+
+    <footer>
+        <div id="location" class="location"></div>
+        <br>
+        <br>
+    </footer>
 </body>

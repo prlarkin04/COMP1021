@@ -11,44 +11,62 @@
     <script src="jselements.js"></script>
 </head>
 <body>
-    <header class="banner">
-        <h1><a href="homepage.html" class="logolink">Campus Kitchen</a></h1>
-        <p>The only website you need as a student for quick, easy recipes, top eats and everything else food</p>
-        <nav>
-            <div class="recipedropdown">
-                <button class="recipedropbtn">Recipes</button>
-                <div class="recipedropdown-content">
-                    <a href="recipe.html">Indian Chicken Curry</a>
-                </div>
-            </div>
+  <header class="banner">
+    <button id="speakButton">Read Aloud</button>
+    <h1><a href="homepage.html" class="logolink">Campus Kitchen</a></h1>
+    <p>The only website you need as a student for quick, easy recipes, top eats and everything else food</p>
+</header>
+<header class="banner2">
+  <br>
+  <hr class = "hr">
+  <br>
+  <nav>
+      <div class="dropdown">
+          <div class="recipedropdown">
+              <button class="recipedropbtn">Recipes</button>
+              <div class="recipedropdown-content">
+                  <a onclick="clickCounterLocal()" href="recipe.html" >Indian Chicken Curry</a>
+              </div>
+          </div>
 
-            <div class="articledropdown">
-                <button class="articledropbtn">Articles</button>
-                <div class="articledropdown-content">
-                    <a href="article1.html">Best Pizza in Leeds</a>
+          <div class="articledropdown">
+              <button class="articledropbtn">Articles</button>
+              <div class="articledropdown-content">
+                  <a href="article1.html">Best Pizza in Leeds</a>
+                  <!-- Add more article links here -->
+              </div>
+          </div>
+      
+          <div class="mythdropdown">
+              <button class="mythdropbtn">Mythbusting</button>
+              <div class="mythdropdown-content">
+                  <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
+                  <!-- Add more myth links here -->
+              </div>
+          </div>
+      </div>
 
-                </div>
-            </div>
-        
-            <div class="mythdropdown">
-                <button class="mythdropbtn">Mythbusting</button>
-                <div class="mythdropdown-content">
-                    <a href="myth1.html">Food Myths: 'Best Before' vs 'Use By</a>
+      <a id= "contactu" href="contactus.html" class="navigate">Contact Us</a>
+  </nav> 
+  
+</header>
 
-                </div>
-            </div>
+  
 
-        
-            <a href="contactus.html" class="navigate">Contact Us</a>
-        </nav>        
-    </header>
+<button id="toggleBanner" class="menu-icon">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+</button>
+
+
 
     <h1>Contact Us:</h1>
     <button id="contactbutton">Send us a message  ...</button>
     <form id= "contactform" action="http://example.com" method="post">
         <fieldset>
           <legend>
-            Contact information
+            Contact Information
           </legend>
           <label for="name">Name:
             <br/>
@@ -71,7 +89,7 @@
           </label>
           <input type="file" />
         </fieldset><br/>
-        <button type="submit">Submit</button>
+        <button id="contactsubmit" type="submit">Submit</button>
       </form>
 
 
@@ -80,5 +98,12 @@
         <li>Email: <a href="mailto:sc23p2l@leeds.ac.uk">sc23p2l@leeds.ac.uk</a></li>
         <li>Phone: +44 7826572655</li>
 
-    </ul>
+        
+        <footer>
+          <div id="location" class="location"></div>
+          <br>
+          <br>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
+</html>
