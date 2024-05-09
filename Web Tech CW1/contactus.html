@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Kitchen</title>
     <link rel="stylesheet" href="stylesheet2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jselements.js"></script>
 </head>
 <body>
     <header class="banner">
@@ -41,6 +44,38 @@
     </header>
 
     <h1>Contact Us:</h1>
+    <button id="contactbutton">Send us a message  ...</button>
+    <form id= "contactform" action="http://example.com" method="post">
+        <fieldset>
+          <legend>
+            Contact information
+          </legend>
+          <label for="name">Name:
+            <br/>
+            <input type="text" name="name" />
+          </label>
+          <br/>
+          <label for="email">Email:
+            <br/>
+            <input type="text" name="email" />
+          </label>
+          <br/>
+          <label for="subject">Subject:
+            <br/>
+            <input type="text" name="subject" />
+          </label>
+          <br/>
+          <label>Message:
+            <br/>
+            <textarea rows="20" style="width: 100%;"></textarea>
+          </label>
+          <input type="file" />
+        </fieldset><br/>
+        <button type="submit">Submit</button>
+      </form>
+
+
+    <h2>Speak to our customer team:</h2>
     <ul>
         <li>Email: <a href="mailto:sc23p2l@leeds.ac.uk">sc23p2l@leeds.ac.uk</a></li>
         <li>Phone: +44 7826572655</li>

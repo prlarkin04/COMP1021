@@ -1,5 +1,7 @@
 /* stylesheet2.css */
 
+
+
 @font-face {
     font-family: 'FuturaPTBO';
     src: url('Futura/FuturaPTBoldOblique.otf') format('opentype');
@@ -12,6 +14,7 @@
     font-style: normal;
 }
 
+
 .logolink {
     font-family: 'FuturaPTBO', sans-serif;
     font-size: 60px;
@@ -23,6 +26,10 @@ body {
     font-family: 'FuturaPTD', sans-serif;
     background-color: white;
     
+}
+
+button {
+    font-family: 'FuturaPTD', sans-serif;
 }
 
 h1 {
@@ -42,21 +49,47 @@ h1 a {
         text-align: center;
 }
 
+.banner2 {
+    background-color: #0C4C00;
+    color: white;
+    padding: 20px;
+    display: none;
+
+}
+
 
 .recipedropbtn {
     background-color: #0C4C00;
     color: #c50a2c;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     font-family: 'FuturaPTD', sans-serif;
+  }
+
+  .toggletest{
+    font-size: x-large;
   }
   
 
   .recipedropdown {
-    position: absolute;
-    top: 202px;
-    right: 56%;
+    position: relative;
+    top: 20px;
+    right: 38%;
+    display: inline-block;
+  }
+
+  .articledropdown {
+    position: relative;
+    top: 20px;
+    right: 37%;
+    display: inline-block;
+  }
+
+  .mythdropdown {
+    position: relative; 
+    top: 20px; 
+    right: 36%;
     display: inline-block;
   }
   
@@ -93,17 +126,12 @@ h1 a {
     background-color: #0C4C00;
     color: #c50a2c;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     font-family: 'FuturaPTD', sans-serif;
   }
   
-  .articledropdown {
-    position: absolute;
-    top: 202px;
-    right: 48%;
-    display: inline-block;
-  }
+
   
 
   .articledropdown-content {
@@ -138,18 +166,13 @@ h1 a {
     background-color: #0C4C00;
     color:#c50a2c;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     font-family: 'FuturaPTD', sans-serif;
   }
   
 
-  .mythdropdown {
-    position: relative; 
-    top: 18px; 
-    right: 32%;
-    display: inline-block;
-  }
+
   
 
   .mythdropdown-content {
@@ -184,6 +207,8 @@ nav {
 nav .navigate {
     color: #c50a2c;
     text-decoration: none;
+    position: relative;
+    top: 20px;
 }
 
 nav .navigate:visited {
@@ -318,3 +343,114 @@ ul li{
     left: 50%;
     transform: translateX(-50%);
 }
+
+#toggleBanner {
+    position: relative;
+    top: -49px;
+    background-color: #0C4C00; /* Blue background color */
+    color: #c50a2c; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 0px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+#toggleBanner:hover {
+    background-color: #960923; /* Darker blue background color on hover */
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #c50a2c; /* Color of the lines */
+    margin: 5px auto; /* Spacing between lines */
+}
+
+.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#contactbutton {
+    position: relative;
+    top: -16px;
+    background-color: #0C4C00; /* Blue background color */
+    color: #c50a2c; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 2px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#contactbutton:hover {
+    background-color: #960923; /* Darker blue background color on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+#location{
+    display: none;
+}
+
+#pizzav {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);;
+}
+
+#pizzaform p {
+    font-size: 30px;
+    color: #c50a2c;
+}
+
+#pizzaform label {
+    font-size: 25px;
+    color: #0C4C00;
+}
+
+#pizzaform button{
+    
+    background-color: #0C4C00; /* Blue background color */
+    color: #e3072f; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 2px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+#pformbox {
+    background-color: #0b4c007a;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+}
+

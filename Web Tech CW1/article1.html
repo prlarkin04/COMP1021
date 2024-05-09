@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Kitchen</title>
     <link rel="stylesheet" href="stylesheet2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jselements.js"></script>
 </head>
 <body>
 
@@ -44,7 +46,9 @@
 
 
     <h1 class="article1title">Where to get the best pizza in Leeds</h1>
-    <img class = "pizza" src="pizza.jpg" alt="Image of Pizza" style = width:40%>
+    <video id="pizzav" src="pizzav.mp4" autoplay muted loop controls>
+        <img src="pizza.jpg" alt="A photo of some delicious pizza.">
+    </video>
     <h3 class = "articlebio">Whether you're a picky Neapolitan purist, a Detroit Deep Dish die hard, or fall somewhere else on the wide spectrum of pizza choice, here are the best places in the city to get a pizza the action</h3>
     <br>
     <hr class="hr">
@@ -70,6 +74,58 @@
     <div class="paragraph-container">
     <p>Last but certainly not on the list, A new pizzeria has arrived in Leeds – Pizza Pilgrims is officially open for business! When it comes to toppings, while there’s always the tried and true classics, these guys certainly don’t shy away from unusual flavour combinations, from the Carbonara, which is loaded with al dente spaghetti to the Americana, topped with hot dog sausages and french fries. But this isn’t as weird as you may think. “In Italy, hot dog and chip pizzas are loved by kids,” Richard told us. “So, a lot of the Italian chefs say it reminds them of what they used to have every Sunday night at home. Find Pizza Pilgrims on Boar Lane”</p>
     </div>
+
+    <div id="pformbox">
+        <form id = pizzaform action="http://example.com" methd="post">
+            <p>
+            Have you visited any of these spots?
+            </p>
+            <label>Yes:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <label>No:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <p>
+            Where did you eat at?
+            </p>
+            <label>Dough Boys:
+            <input type="checkbox" />
+            </label>
+            <br/>
+            <label>Rudy’s:
+            <input type="checkbox" />
+            </label>
+            <br/>
+            <label>Pizza Pilgrims:
+            <input type="checkbox" />
+            </label>
+            <br/>
+            <p>
+            Which was your favourite?
+            </p>
+            <label>Dough Boys:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <label>Rudy's:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <label>Pizza Pilgrims:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <label>I can't pick, they're all so good:
+            <input type="radio" name="module" />
+            </label>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     <a href="https://leeds-list.com/food-and-drink/where-to-get-the-best-pizza-in-leeds/" class="reference">
     <h3 class = "reference">Article adapted from: https://leeds-list.com/food-and-drink/where-to-get-the-best-pizza-in-leeds/</h3>
     </a>
